@@ -29,7 +29,7 @@
     margin-bottom: 0px;
     text-align: center;
     text-decoration: underline;
-    color: #FF8E61;
+    color: royalblue;
 }
 
 .about-us {
@@ -50,7 +50,7 @@
     min-height: 400px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     z-index: 2;
     box-sizing: border-box;
 }
@@ -156,4 +156,62 @@
     background: -webkit-linear-gradient(-45deg,#4b384c 15%,#da5de2 100%);
     background: linear-gradient(135deg,#4b384c 15%,#da5de2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c' , endColorstr='#da5de2' ,GradientType=1);
+}
+
+
+@media (max-width:600px) {
+
+    .about {
+        font-size: 1.5em;
+        margin-bottom: 0.1em;
+    }
+
+    .heading {
+        font-size: 1.5em;
+    }
+    
+    .quotes .box{
+        width: 22em;
+        height: 19em;
+    }
+
+    .text {
+        background-size: contain;
+    }
+
+}
+
+@media (max-width:800px) {
+    
+    .about {
+        font-size: 3.5em;
+    }
+
+    .heading {
+        font-size: 2.3em;
+    }
+
+}
+
+@media (max-width:1300px) {
+
+    .quotes .box h2 {
+        font-size: 20px;
+    }
+
+    .quotes .box {
+        width: 25em;
+        height: 22em;
+        top: 140px;
+        justify-content: space-evenly;
+    }
+
+    .quotes .box.box1 {
+        margin-bottom: 20px;
+    }
+
+    .quotes .box.box2{
+        margin-bottom: 20px;
+    }
+    
 }
