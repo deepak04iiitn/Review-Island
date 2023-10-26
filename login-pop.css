@@ -176,3 +176,21 @@
     text-decoration: underline;
 
 }
+
+@media (max-width: 600px) {
+
+    .wrapper {
+        width: 300px;
+        height: 370px;
+    }
+
+    .form-box h2 {
+        font-size: 2em;
+        top: 10px;
+    }
+
+    .rem-for {
+        font-size: 13px;
+    }
+    
+}
