@@ -30,10 +30,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
   }
   
-  nav img{
-    border-radius: 15px;
+  nav .logo{
+    font-family: 'Tilt Neon', sans-serif;
+    cursor: pointer;
   }
   
   nav ul li{
@@ -54,6 +56,36 @@
     font-style: italic;
     font-weight: bold;
   }
+
+  nav .icon {
+    color: #f2f2f2;
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
+    margin-left: 1%;
+    display: none;
+  }
+
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  nav .menu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  .fa-facebook:hover {color: rgb(0, 110, 255);}
+  .fa-twiiter:hover {color: rgb(86, 154, 243);}
+  .fa-instagram:hover {color: rgb(255, 0, 191);}
+  .fa-github:hover {color: rgb(255, 123, 0);}
+
+
   
   /* Style the top-level menu */
   .menu {
@@ -61,6 +93,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
+    font-size: 18px;
   }
   
   .menu li {
@@ -135,26 +168,24 @@
   
   
   .login-btn{
-    border: 2px solid white;
+    border: 2px solid #FF7353;
     border-radius: 6px;
-    background: transparent;
-    width: 250px;
+    background: #FF7353;
+    width: 170px;
     transition: 0.5s;
   }
   
   .login-btn:hover{
-      background-color: #fff;
+     /* background-color: #fff;*/
       color: black;
   }
-  
-  
   
   .content{
     text-align: center;
   }
   
   .content h1 {
-    font-size: 150px;
+    font-size: 10vw;
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
@@ -180,10 +211,11 @@
     display: inline-block;
     color: #fff;
     font-size: 24px;
-    border: 2px solid #fff;
+    border: 2px solid #FF7353;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+    background: #FF7353;
   }
   
   .back-video{
@@ -206,3 +238,88 @@
       height: 100%;
     }
   }
+
+  @media (max-width:600px) {
+        .content h1 {
+            font-size: 13vw;
+            margin-bottom: 20px;
+        }
+
+        .content h2 {
+            font-size: 3vw;
+        }
+
+        .content a {
+            width: 170px;
+            font-size: 15px;
+            padding: 12px 20px;
+        }
+
+        nav .logo {
+            height: 30px;
+            width: 120px;
+        }
+
+  }
+
+  @media (max-width:800px) {
+
+    .content h1 {
+        font-size: 13vw;
+    }
+
+    .content h2 {
+        font-size: 3vw;
+    }
+    
+  }
+
+  @media (max-width: 1300px) {
+    
+    nav .menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background: black;*/
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(50px);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+
+    nav .menu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        color: #f2f2f2;
+    }
+
+  }
+  
+
+  
