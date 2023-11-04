@@ -213,5 +213,15 @@
     .quotes .box.box2{
         margin-bottom: 20px;
     }
+
+    .quotes .box.box3{
+        margin-bottom: 200px;
+    }
     
+}
+
+@media (max-width: 1060px) {
+    .quotes .box.box1 {
+        margin-right: 10px;
+    }
 }
