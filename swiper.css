@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.swiper-head {
+    font-size: 5vw;
+    text-align: center;
+    /*color: rgb(23, 70, 199);*/
+    margin-bottom: 1em;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.swiper-head:hover {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
+    /*border: 2px solid crimson;
+    border-radius: 50px;*/
+}
+
+.swipe {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: #343F4F;
+}
+
+.swiper-image {
+    max-width: 1200px;
+    position: relative;
+}
+
+.swiper-image i {
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-image i:first-child {
+    left: -23px;
+    display: none;
+}
+
+.swiper-image i:last-child {
+    right: -23px;
+}
+
+.swiper-image .infinity {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.infinity .dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.infinity .dragging img {
+    pointer-events: none;
+}
+
+.infinity img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.infinity img:first-child{
+    margin-left: 0px;
+}
+
+
+@media  (max-width: 1200px) {
+
+    .infinity img {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width:650px) {
+
+    .infinity img {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    
+    .swiper-head {
+        font-size: 5.9vw;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .swiper-head {
+        font-size: 9vw;
+        font-weight: bolder;
+        flex-wrap: wrap;
+    }
+
+    .swiper-head:hover {
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+}
