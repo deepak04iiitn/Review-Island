@@ -1,11 +1,40 @@
-.category {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 4.8vw;
-    font-family: 'Ultra', sans-serif;
-    text-shadow: 0 2px white, 0 3px #777;
-    color: #343434;
-}
+.nine h1 {
+    text-align:center;
+    font-size:50px; 
+    text-transform:uppercase; 
+    color:#222; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight:400;
+    padding-top: 10px;
+  }
+  .nine h1 span {
+    margin-top: 5px;
+    font-size:15px; 
+    color:#444; 
+    word-spacing:1px; 
+    font-weight:normal; 
+    letter-spacing:2px;
+    text-transform: uppercase; 
+    font-family:"Raleway", sans-serif; 
+    font-weight:500;
+  
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#f8f8f8;
+  }
+
 
 .buttons {
     text-align: center;
@@ -16,7 +45,7 @@
     width: 50%;
     height: 7vh;
     border-radius: 50px;
-    background-color: blue;
+    background-color: rgb(78, 78, 213);
     cursor: pointer;
     margin-bottom: 2em;
     box-sizing: border-box;
@@ -24,9 +53,18 @@
     cursor: pointer;
 }
 
+.category-btn:hover {
+    background-color: rgb(4, 4, 218);
+}
+
 .category-btn p {
     font-size: 2em;
     color: #ffff;
+}
+
+.cat-btn {
+    background-color: #F6F6EB
+    
 }
 
 @media (max-width:650px) {
@@ -34,7 +72,13 @@
         font-size: 1.3em;
     }
 
-    .category {
-        font-size: 6vw;
+    .nine h1 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nine h1 {
+        font-size: 5vw;;
     }
 }
