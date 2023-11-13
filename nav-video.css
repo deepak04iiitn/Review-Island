@@ -52,7 +52,7 @@
   
   nav ul li a:hover{
     text-decoration: underline;
-    color: black;
+    color: rgb(4, 20, 84);
     font-style: italic;
     font-weight: bold;
   }
