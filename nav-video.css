@@ -52,9 +52,17 @@
   
   nav ul li a:hover{
     text-decoration: underline;
-    color: rgb(4, 20, 84);
+    color: black;
     font-style: italic;
     font-weight: bold;
+  }
+
+  li .profile {
+    font-size: 15px;
+  }
+
+  .menu li i {
+    font-size: 15px;
   }
 
   nav .icon {
@@ -169,7 +177,7 @@
   
   .login-btn{
     border: 2px solid #FF7353;
-    border-radius: 6px;
+    border-radius: 50px;
     background: #FF7353;
     width: 170px;
     transition: 0.5s;
