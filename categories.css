@@ -62,10 +62,10 @@
     color: #ffff;
 }
 
-.cat-btn {
-    background-color: #F6F6EB
+/*.cat-btn {
+    background-color: #F6F6EB;
     
-}
+}*/
 
 @media (max-width:650px) {
     .category-btn p {
@@ -80,5 +80,15 @@
 @media (max-width: 1200px) {
     .nine h1 {
         font-size: 5vw;;
+    }
+}
+
+@media (max-width:400px) {
+    .buttons {
+        width: 100vw;
+    }
+
+    .nine {
+        font-weight: 600;
     }
 }
