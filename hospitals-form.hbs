@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <div class="form-outer-box">
+        <div class="form-inner-box">
+            <div class="inner-box-heading">
+                REVIEW FORM
+
+                <div class="rocket">
+                    <img src="assets/rocket-sharp.svg" height="70" width="70">
+                    
+                    <div class="rocket-content1">
+                        WELCOME
+                    </div>
+
+                    <div class="rocket-content2">
+                        to the largest REVIEW <br> Community ever . 
+                    </div>
+
+                    <div class="rocket-button" onclick="clickHome()">
+                        <button class="rocket-btn" >HOME</button>
+                    </div>
+                </div>
+
+                <div class="review-form">
+                    <form action="/hospital" method="post">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">First Name :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <input type="text" name="hospitalfirstname" placeholder="First Name *" required class="input-field">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">Last Name :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <input type="text" name="hospitallastname" placeholder="Last Name *" required class="input-field">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">Hospital Name :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <input type="text" name="hospitalname" placeholder="Hospital Name *" required class="input-field">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">Sub-Category :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <select id="selectCategory" name="hospitalsubcategory" required class="input-field">
+                                                <option value="" disabled selected>Choose the sub-category</option>
+                                                <option value="CHARGES">CHARGES</option>
+                                                <option value="DOCTORS">DOCTORS</option>
+                                                <option value="LOCATION">LOCATION</option>
+                                                <option value="EMERGENCY AVAILABILITY">EMERGENCY AVAILABILITY</option>
+                                                <option value="EQUIPMENTS">EQUIPMENTS</option>
+                                                <option value="MEDICINES QUALITY">MEDICINES QUALITY</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">Rating :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <select id="selectRating" name="hospitalrating" required class="input-field">
+                                                <option value="" disabled selected>Give a Rating</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <label class="input-review">Review :</label>
+                                    </td>
+                                    <td align="left">
+                                        <div class="review-input-box">
+                                            <textarea id="writeReview" name="hospitalreview" rows="8" cols="20" placeholder="Write a Review *" required class="input-field-textarea"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right">
+                                        <button type="reset" class="college-reset-btn">Reset</button>
+                                    </td>
+                                    <td align="right">
+                                        <button type="submit" class="college-submit-btn">Submit</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/college.js"></script>
+</body>
+</html>
